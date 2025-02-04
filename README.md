@@ -31,7 +31,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
+   DB_PASS=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -49,7 +49,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    ls /backup
 
    # Outside the container
-   ls /backup
+   ls /path/to/backup
    ```
 
 ---
@@ -75,7 +75,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
+   DB_PASS=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -97,7 +97,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
          DB_HOST: ${DB_HOST}
          DB_PORT: ${DB_PORT}
          DB_USER: ${DB_USER}
-         DB_PASSWORD: ${DB_PASS}
+         DB_PASS: ${DB_PASS}
          DB_NAME: ${DB_NAME}
    ```
 
@@ -115,7 +115,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    ls /backup
 
    # Outside the container
-   ls /backup
+   ls /path/to/backup
    ```
 
 6. Optional: Configure a cron job to run the script periodically:
@@ -157,7 +157,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
+   DB_PASS=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -188,7 +188,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
+   DB_PASS=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -212,7 +212,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
          DB_HOST: ${DB_HOST}
          DB_PORT: ${DB_PORT}
          DB_USER: ${DB_USER}
-         DB_PASSWORD: ${DB_PASS}
+         DB_PASS: ${DB_PASS}
          DB_NAME: ${DB_NAME}
    ```
 
