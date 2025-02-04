@@ -71,12 +71,12 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    # Database type (postgres, mysql, mariadb, mongo)
    DB_TYPE="<postgres | mysql | mariadb | mongo>"
 
-   # Postgres
-   DB_HOST=<localhost>
-   DB_PORT=<1234>
-   DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
-   DB_NAME=<db-name>
+   # Database information
+   DB_HOST="<localhost>"
+   DB_PORT="<1234>"
+   DB_USER="<db-user>"
+   DB_PASSWORD="<db-password>"
+   DB_NAME="<db-name>"
    ```
 
 3. Create a `docker-compose.yml` file in the root directory of the project with the following contents:
@@ -153,12 +153,12 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    # Database type (postgres, mysql, mariadb, mongo)
    DB_TYPE="<postgres | mysql | mariadb | mongo>"
 
-   # Postgres
-   DB_HOST=<localhost>
-   DB_PORT=<1234>
-   DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
-   DB_NAME=<db-name>
+   # Database information
+   DB_HOST="<localhost>"
+   DB_PORT="<1234>"
+   DB_USER="<db-user>"
+   DB_PASSWORD="<db-password>"
+   DB_NAME="<db-name>"
    ```
 
    Replace the values with your own database credentials and database names.
@@ -184,12 +184,12 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    # Database type (postgres, mysql, mariadb, mongo)
    DB_TYPE="<postgres | mysql | mariadb | mongo>"
 
-   # Postgres
-   DB_HOST=<localhost>
-   DB_PORT=<1234>
-   DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
-   DB_NAME=<db-name>
+   # Database information
+   DB_HOST="<localhost>"
+   DB_PORT="<1234>"
+   DB_USER="<db-user>"
+   DB_PASSWORD="<db-password>"
+   DB_NAME="<db-name>"
    ```
 
    Replace the values with your own database credentials and database names.
