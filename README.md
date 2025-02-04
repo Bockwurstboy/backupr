@@ -1,6 +1,6 @@
 # Backupr
 
-Backupr is a simple Docker container that runs a cron job to backup your PostgreSQL, MySQL/MariaDB, and MongoDB databases.
+Backupr is a simple Docker container that runs a cron job to backup your PostgreSQL, MySQL/MariaDB, or MongoDB databases.
 
 ## Usage
 
@@ -218,4 +218,4 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://opensource.org/license/mit) for details.
