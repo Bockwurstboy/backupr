@@ -41,17 +41,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
 
-      - name: Cleanup untagged images
-        env:
-          GHCR_PAT: ${{ secrets.GHCR_PAT }}
-        run: |
-          REPO="ghcr.io/bockwurstboy/backupr"
-          untagged_sha=$(curl -s -H "Authorization: Bearer $GHCR_PAT" \
-            "https://ghcr.io/v2/${REPO}/tags/list" | jq -r '.tags[] | select(startswith("sha256:"))')
-          for sha in ${untagged_sha}; do
-            echo "Deleting untagged image: ${sha}"
-            digest=$(curl -s -I -H "Authorization: Bearer $GHCR_PAT" \
-              "https://ghcr.io/v2/${REPO}/manifests/${sha}" | awk '$1 == "Docker-Content-Digest:" { print $2 }' | tr -d $'\r')
-            curl -X DELETE -H "Authorization: Bearer $GHCR_PAT" \
-              "https://ghcr.io/v2/${REPO}/manifests/${digest}"
-          done
