@@ -31,7 +31,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASS=<db-password>
+   DB_PASSWORD=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -75,7 +75,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASS=<db-password>
+   DB_PASSWORD=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -97,7 +97,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
          DB_HOST: ${DB_HOST}
          DB_PORT: ${DB_PORT}
          DB_USER: ${DB_USER}
-         DB_PASS: ${DB_PASS}
+         DB_PASSWORD: ${DB_PASSWORD}
          DB_NAME: ${DB_NAME}
    ```
 
@@ -157,7 +157,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASS=<db-password>
+   DB_PASSWORD=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -188,7 +188,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    DB_HOST=<localhost>
    DB_PORT=<1234>
    DB_USER=<db-user>
-   DB_PASS=<db-password>
+   DB_PASSWORD=<db-password>
    DB_NAME=<db-name>
    ```
 
@@ -212,7 +212,7 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
          DB_HOST: ${DB_HOST}
          DB_PORT: ${DB_PORT}
          DB_USER: ${DB_USER}
-         DB_PASS: ${DB_PASS}
+         DB_PASSWORD: ${DB_PASSWORD}
          DB_NAME: ${DB_NAME}
    ```
 
