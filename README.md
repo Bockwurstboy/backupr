@@ -27,12 +27,12 @@ Backupr is a simple Docker container that runs a cron job to backup your Postgre
    # Database type (postgres, mysql, mariadb, mongo)
    DB_TYPE="<postgres | mysql | mariadb | mongo>"
 
-   # Postgres
-   DB_HOST=<localhost>
-   DB_PORT=<1234>
-   DB_USER=<db-user>
-   DB_PASSWORD=<db-password>
-   DB_NAME=<db-name>
+   # Database information
+   DB_HOST="<localhost>"
+   DB_PORT="<1234>"
+   DB_USER="<db-user>"
+   DB_PASSWORD="<db-password>"
+   DB_NAME="<db-name>"
    ```
 
 4. Run the Docker container:
