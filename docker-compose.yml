@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  backup:
+    build:
+      context: .
+    container_name: database-backup-${PRJ_NAME:-"default"}
+    environment:
+      DB_TYPE: ${DB_TYPE}
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASS}
+      DB_NAME: ${DB_NAME}
+    volumes:
+      - ./backup:/backup
